@@ -2,12 +2,13 @@
 
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+use Teste\Models\Cliente;
 
-require_once __DIR__ . "/../models/Cliente.php";
+
 require_once __DIR__ . "/../database/Banco.php";
 
 
-class ClienteController
+final class ClienteController
 {
 
     public function findAll(Request $request, Response $response, $args)

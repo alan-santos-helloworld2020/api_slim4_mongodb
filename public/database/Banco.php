@@ -3,6 +3,7 @@
 use MongoDB\Client as Mongo;
 use MongoDB\BSON\ObjectId;
 use MongoDB\Driver\Exception\ConnectionTimeoutException as ExceptionError;
+use Teste\Models\Cliente;
 
 
 require_once __DIR__ . '/../../vendor/autoload.php';

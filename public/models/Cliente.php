@@ -1,5 +1,7 @@
 <?php
 
+namespace Teste\Models;
+
 class Cliente{
 
     private $id;

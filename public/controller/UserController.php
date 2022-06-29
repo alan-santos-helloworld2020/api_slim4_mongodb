@@ -38,7 +38,7 @@ final class UserController
               if($userScan["password"] === $body["password"]){                     
                      $auth = new Auth();
                      $token = $auth->GenerateToken($user);
-                     $response->getBody()->write(json_encode(["auth"=>true,$token], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
+                     $response->getBody()->write(json_encode(["auth"=>true,"token"=>$token], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE));
                      return $response->withHeader("Content-Type", "application/json")->withStatus(201);
               }
 
